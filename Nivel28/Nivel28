@@ -1,1 +1,89 @@
+ cd /tmp  
+mkdir /tmp/bandit29repo
+cd /tmp/bandit29repo 
+git clone ssh://bandit29-git@bandit.labs.overthewire.org:2220/home/bandit29-git/repo 
+Clonando en 'repo'...
+                         _                     _ _ _   
+                        | |__   __ _ _ __   __| (_) |_ 
+                        | '_ \ / _` | '_ \ / _` | | __|
+                        | |_) | (_| | | | | (_| | | |_ 
+                        |_.__/ \__,_|_| |_|\__,_|_|\__|
+                                                       
 
+                      This is an OverTheWire game server. 
+            More information on http://www.overthewire.org/wargames
+
+backend: gibson-0
+bandit29-git@bandit.labs.overthewire.org's password: 
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 16 (delta 2), reused 0 (delta 0), pack-reused 0
+Recibiendo objetos: 100% (16/16), listo.
+Resolviendo deltas: 100% (2/2), listo.
+
+cd repo
+git tag
+ls -la
+total 4
+drwxrwxr-x 3 kali kali  80 jun  1 16:35 .
+drwxrwxr-x 3 kali kali  60 jun  1 16:35 ..
+drwxrwxr-x 7 kali kali 240 jun  1 16:35 .git
+-rw-rw-r-- 1 kali kali 131 jun  1 16:35 README.md
+
+git log
+commit 921cad124cfe5b4ba9f648de1894f75656ff0ff4 (HEAD -> master, origin/master, origin/HEAD)
+Author: Ben Dover <noone@overthewire.org>
+Date:   Fri Apr 3 15:17:56 2026 +0000
+
+    fix username
+
+commit edd6383ec473cb45c7f620ad3d762f31ebbc41ea
+Author: Ben Dover <noone@overthewire.org>
+Date:   Fri Apr 3 15:17:56 2026 +0000
+
+    initial commit of README.md
+
+cat README.md
+# Bandit Notes
+Some notes for bandit30 of bandit.
+
+## credentials
+
+- username: bandit30
+- password: <no passwords in production!>
+
+git branch -a      
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/dev
+  remotes/origin/master
+  remotes/origin/sploits-dev
+git checkout remotes/origin/dev                                                      
+Nota: cambiando a 'remotes/origin/dev'.
+
+Te encuentras en estado 'detached HEAD'. Puedes revisar por aquí, hacer
+cambios experimentales y hacer commits, y puedes descartar cualquier
+commit que hayas hecho en este estado sin impactar a tu rama realizando
+otro checkout.
+
+Si quieres crear una nueva rama para mantener los commits que has creado,
+puedes hacerlo (ahora o después) usando -c con el comando checkout. Ejemplo:
+
+  git switch -c <nombre-de-nueva-rama>
+
+O deshacer la operación con:
+
+  git switch -
+
+Desactiva este aviso poniendo la variable de config advice.detachedHead en false
+
+HEAD está ahora en 97622e0 add data needed for development
+cat README.md
+# Bandit Notes
+Some notes for bandit30 of bandit.
+
+## credentials
+
+- username: bandit30
+- password: qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL
