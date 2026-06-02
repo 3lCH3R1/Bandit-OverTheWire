@@ -1,1 +1,113 @@
+cd /tmp
+mktemp -d
+cd /tmp/folder create
 
+git clone ssh://bandit31-git@bandit.labs.overthewire.org:2220/home/bandit31-git/repo
+
+fb5S2xb7bRyFmAvQYQGEqsbhVyJqhnDy
+
+ls
+cd repo
+ls -la
+cat README.md
+echo 'May I come in?' > key.txt
+ls -la
+cat key.txt  
+May I come in?
+cat .gitignore       
+*.txt
+git add -f key.txt 
+git commit -a
+
+git config user.name "bandit31"
+git config user.email"bandit31@overthewire.org"
+echo 'May I come in?' > key.txt
+git commit -m "Add key.txt file"
+git commit -m "Add key.txt"
+git config --list 
+user.name=master
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=ssh://bandit31-git@bandit.labs.overthewire.org:2220/home/bandit31-git/repo
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+user.name=bandit31
+git push origin master
+git log -1
+commit 955f4b28e0b20807864d79570968cd5ee0baf28a (HEAD -> master, origin/master, origin/HEAD)
+Author: Ben Dover <noone@overthewire.org>
+Date:   Fri Apr 3 15:18:00 2026 +0000
+ git config --list
+user.name=master
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=ssh://bandit31-git@bandit.labs.overthewire.org:2220/home/bandit31-git/repo
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+user.name=bandit31
+git config user.name "bandit31"
+git config user.email"bandit31@overthewire.org"
+git config --list
+user.name=master
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=ssh://bandit31-git@bandit.labs.overthewire.org:2220/home/bandit31-git/repo
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+user.name=bandit31
+user.email=bandit31@overthewire.org
+echo 'May I come in?'> key.txt
+git add -f key.txt
+git commit -m "Add key.txt"
+[master c354b89] Add key.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 key.txt
+git commit --amend --reset-author
+[master ff6957e] Add key.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 key.txt
+git log -1                       
+commit ff6957e44f2db488751ff1877b7f2eb3766b8b54 (HEAD -> master)
+Author: bandit31 <bandit31@overthewire.org>
+Date:   Tue Jun 2 01:47:49 2026 -0400
+Add key.txt
+
+git push origin master
+
+   _                     _ _ _   
+                        | |__   __ _ _ __   __| (_) |_ 
+                        | '_ \ / _` | '_ \ / _` | | __|
+                        | |_) | (_| | | | | (_| | | |_ 
+                        |_.__/ \__,_|_| |_|\__,_|_|\__|
+                                                       
+
+                      This is an OverTheWire game server. 
+            More information on http://www.overthewire.org/wargames
+
+backend: gibson-0
+bandit31-git@bandit.labs.overthewire.org's password: 
+Enumerando objetos: 4, listo.
+Contando objetos: 100% (4/4), listo.
+Compresión delta usando hasta 2 hilos
+Comprimiendo objetos: 100% (2/2), listo.
+Escribiendo objetos: 100% (3/3), 322 byte | 322.00 KiB/s, listo.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: ### Attempting to validate files... ####
+remote: 
+remote: .oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.
+remote: 
+remote: Well done! Here is the password for the next level:
+remote: 3O9RfhqyAlVBEZpVb6LYStshZoqoSx5K 
+remote: 
+remote: .oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.
+remote: 
+To ssh://bandit.labs.overthewire.org:2220/home/bandit31-git/repo
